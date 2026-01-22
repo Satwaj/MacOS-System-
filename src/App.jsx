@@ -8,6 +8,9 @@ import Resume from "./windows/Resume";
 import Spotify from "./windows/Spotify";
 import Cli from "./windows/Cli";
 import { useState } from "react";
+import Intro from "./components/Intro";
+
+
 
 function App() {
   const [windowsState, setwindowsState] = useState({
@@ -16,11 +19,13 @@ function App() {
     resume: false,
     spotify: false,
     cli: false,
+    intro:false,
   });
 
   return (
     <main>
-      <Nav />
+      <Nav setWindowsState={setwindowsState} />
+
       <Dock windowsState={windowsState} setWindowsState={setwindowsState} />
       {windowsState.github && (
         <Github
@@ -57,8 +62,18 @@ function App() {
           setWindowsState={setwindowsState}
         />
       )}
+      {windowsState.intro && (
+        <Intro
+          close={() => setwindowsState((state) => ({ ...state, intro: false }))}
+          windowName="intro"
+          windowsState={windowsState}
+          setWindowsState={setwindowsState}
+        />
+      )}
     </main>
   );
 }
 
 export default App;
+
+

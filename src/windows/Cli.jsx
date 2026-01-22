@@ -79,7 +79,7 @@ Portfolio: satwajbachhav.dev`,
 ║     Welcome to My Portfolio      
 ╚════════════════════════════════════════╝
 
-Hello! 👋 Welcome to my interactive portfolio. You can navigate through my work experience, skills, and projects using terminal commands.
+Hello!  Welcome to my interactive portfolio. You can navigate through my work experience, skills, and projects using terminal commands.
 
 Type 'help' to see all available commands, or try:
   • about     - Learn about me
@@ -88,7 +88,7 @@ Type 'help' to see all available commands, or try:
   • experience - See my career history
   • contact   - Get in touch
 
-Happy exploring! 🚀
+Happy exploring! 
 `;
 
   return (

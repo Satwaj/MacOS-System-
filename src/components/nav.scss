@@ -11,11 +11,29 @@ nav{
 
   display: flex;
   justify-content: space-between;
+
+ 
+
+  .nav-item p{
+  transition: width 0.3s ease;
+
+  }
   
 
   .left, .right{
     display: flex;
     gap: 1rem;
+    
+    .nav-item p:hover{
+      cursor: pointer;
+      opacity: 0.8;
+      scale: 0.90;
+       letter-spacing: 0.5px;
+      
+     
+      
+
+    }
 
   }
 

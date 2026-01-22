@@ -1,8 +1,9 @@
-import React from "react";
+
 import "./nav.scss";
 import DateTime from "./DateTime";
 
-const Nav = () => {
+const Nav = ( {setWindowsState}) => {
+
   return (
     <nav>
       <div className="left">
@@ -11,17 +12,28 @@ const Nav = () => {
         </div>
 
         <div className="nav-item">
-          <p>Satwaj Bachhav</p>
+          <p
+            onClick={() =>
+              setWindowsState((state) => ({ ...state, intro: true }))
+            }
+          >
+            Satwaj Bachhav
+          </p>
         </div>
 
         <div className="nav-item">
           <p>File</p>
         </div>
+
         <div className="nav-item">
           <p>Window</p>
         </div>
+
         <div className="nav-item">
           <p>Terminal</p>
+        </div>
+        <div className="nav-item">
+          <p>Edit</p>
         </div>
       </div>
       <div className="right">

@@ -10,6 +10,11 @@
     font-weight: 500;
     border: 1px solid rgba(202, 198, 198, 0.145);
 
+   
+
+
+
+
     .nav {
 
         padding-inline: 0.75rem;
@@ -20,6 +25,11 @@
         align-items: center;
 
         gap: 1.5rem;
+
+       
+        
+
+        
 
         .dots {
             display: flex;
@@ -53,10 +63,7 @@
 
     .main-content {
         height: 100%;
-    }
-
-    .main-content{
-        height: 100%;
+        
     }
 
     *::-webkit-scrollbar{
