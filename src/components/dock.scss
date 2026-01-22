@@ -28,32 +28,48 @@
   transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1) ;
 
   }
+ 
 
 
   .github {
     background-color: black;
+    height: 50px;
   }
 
   .note {
     background:linear-gradient(to bottom, #ed7825, #e07843ed);
+    height: 50px;
+    width: 50px;
   }
   .pdf {
     background: linear-gradient(to bottom, red, rgba(240, 89, 89, 0.968));
+    height: 50px;
+    width: 50px;
   }
   .calender {
     background: linear-gradient(to bottom, #3b1dfa, #2c68cfe9);
+    height: 50px;
+    width: 50px;
   }
   .spotify {
     background: linear-gradient(to bottom, #5dc782, #1aa34a);
+    height: 50px;
+    width: 50px;
   }
   .mail {
     background: linear-gradient(to bottom, #3e2ee8, #453fb4);
+    height: 50px;
+    width: 50px;
   }
   .link {
     background: linear-gradient(to bottom, #f01b66, #d14785f7);
+    height: 50px;
+    width: 50px;
   }
   .cli {
     background: linear-gradient(to bottom, #131111, #352c2cf0);
+    height: 50px;
+    width: 50px;
   }
 
   .icon:hover{
