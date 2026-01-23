@@ -4,6 +4,8 @@ import "./dock.scss";
 const Dock = ({  setWindowsState }) => {
   return (
     <footer className="dock">
+
+
       <div
         onClick={() => {
           setWindowsState((state) => ({ ...state, github: true }));
@@ -12,6 +14,8 @@ const Dock = ({  setWindowsState }) => {
       >
         <img src="/doc-icons/github.svg" alt="" />
       </div>
+
+
       <div
         onClick={() => {
           setWindowsState((state) => ({ ...state, note: true }));
@@ -20,6 +24,8 @@ const Dock = ({  setWindowsState }) => {
       >
         <img src="/doc-icons/note.svg" alt="" />
       </div>
+
+
       <div
         onClick={() => {
           setWindowsState((state) => ({ ...state, resume: true }));
@@ -28,6 +34,8 @@ const Dock = ({  setWindowsState }) => {
       >
         <img src="/doc-icons/pdf.svg" alt="" />
       </div>
+
+
       <div
         onClick={() => {
           window.open("https://calendar.google.com/", "_blank");
@@ -36,6 +44,8 @@ const Dock = ({  setWindowsState }) => {
       >
         <img src="/doc-icons/calender.svg" alt="" />
       </div>
+
+
       <div
         onClick={() => {
           setWindowsState((state) => ({ ...state, spotify: true }));
@@ -44,6 +54,8 @@ const Dock = ({  setWindowsState }) => {
       >
         <img src="/doc-icons/spotify.svg" alt="" />
       </div>
+
+
       <div
         onClick={() => {
           window.open("mailto:satwajbachhav04@gmail.com", "_blank");
@@ -70,6 +82,20 @@ const Dock = ({  setWindowsState }) => {
       >
         <img src="/doc-icons/cli.svg" alt="" />
       </div>
+
+      <div
+      onClick={()=>{
+        setWindowsState((state)=>({
+          ...state, camera: true}));
+      }}
+      
+      className="icon camera">
+        <img src="/public/doc-icons/apple.svg" alt="" />
+      </div>
+
+
+
+
     </footer>
   );
 };

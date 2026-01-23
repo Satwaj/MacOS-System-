@@ -34,6 +34,7 @@
   .github {
     background-color: black;
     height: 50px;
+    width: 50px;
   }
 
   .note {
@@ -70,6 +71,14 @@
     background: linear-gradient(to bottom, #131111, #352c2cf0);
     height: 50px;
     width: 50px;
+  }
+
+
+  .camera {
+     background: linear-gradient(to bottom, #b6acacaa, #352c2c4f);
+    height: 50px;
+    width: 50px;
+   
   }
 
   .icon:hover{
